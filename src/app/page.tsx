@@ -21,14 +21,14 @@ export default async function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-background to-muted flex items-center justify-center p-4">
       <div className="absolute top-4 right-4">
         <ModeToggle />
       </div>
       <div className="max-w-md w-full">
         <Card>
           <CardHeader className="text-center">
-            <CardTitle className="text-2xl font-bold text-gray-900">
+            <CardTitle className="text-2xl font-bold text-foreground">
               Billing Admin
             </CardTitle>
             <CardDescription>
@@ -36,7 +36,7 @@ export default async function Home() {
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
-            <p className="text-center text-gray-600">
+            <p className="text-center text-muted-foreground">
               Please sign in to access your dashboard and manage your billing
               system.
             </p>
@@ -44,7 +44,7 @@ export default async function Home() {
               <Link href="/login" className="block">
                 <Button className="w-full">Sign In</Button>
               </Link>
-              <p className="text-center text-sm text-gray-500">
+              <p className="text-center text-sm text-muted-foreground">
                 Don't have an account? You can create one on the sign in page.
               </p>
             </div>
