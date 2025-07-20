@@ -89,7 +89,7 @@ export function SignupForm({
           "Account created successfully! Please check your email to confirm your account."
         );
       }
-    } catch (err) {
+    } catch {
       onError("An unexpected error occurred");
     } finally {
       setIsLoading(false);

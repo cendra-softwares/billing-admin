@@ -69,7 +69,7 @@ export function LoginForm({
         router.push("/dashboard");
         router.refresh();
       }
-    } catch (err) {
+    } catch {
       onError("An unexpected error occurred");
     } finally {
       setIsLoading(false);
